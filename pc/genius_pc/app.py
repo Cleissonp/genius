@@ -276,7 +276,7 @@ class Aplicativo:
             if evento.key == pygame.K_F11:
                 self._alternar_tela_cheia()
             elif evento.key == pygame.K_m:
-             mudo = self.sons.alternar_mudo()
+                mudo = self.sons.alternar_mudo()
                 if mudo:
                     self._enviar(comando_tom(0, 0))
                 self._mostrar_banner("SOM OFF" if mudo else "SOM ON", OURO, 0.8)
@@ -970,7 +970,7 @@ class Aplicativo:
             self._texto(
                 texto.texto,
                 texto.tamanho,
-     texto.cor,
+                texto.cor,
                 centro=(texto.x, texto.y),
                 alpha=alpha,
             )
